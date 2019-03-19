@@ -1,8 +1,46 @@
 body {
-  background-color: white;
   font-family: 'Permanent Marker', cursive;
+  height: 100%;
 }
 
+/* <------Body Content--------> */
+/* <---Landing page---> */
+#wordbox {
+  position: absolute;
+  z-index: 99999;
+}
+
+.title {
+  font-size: 10em;
+  color: #a6d2fc;
+  margin: 60px auto 0px 140px;
+  text-shadow: -1px -1px 0px #79baf8, 1px -1px 0px #79baf8, -1px 1px 10px #79baf8, 1px 1px 10px #79baf8;
+  /* text-shadow: 1px 1px 5px #000; */
+}
+
+.landinfo {
+  font-size: 1.25em;
+  color: #79baf8;
+  margin: -30px auto auto 140px;
+  text-shadow: .5px .5px 2px #000;
+}
+
+/* <----Landing page buttons----> */
+#login {
+  position: relative;
+  display: inline-block;
+  margin: 50px 0px 0px 800px;
+}
+
+#join {
+  position: relative;
+  display: inline-block;
+  margin: 50px 0px 0px 0px;
+}
+
+
+
+/* <----------Nav Bar----------> */
 #togicon {
   width:  18px;
   height: 18px;
@@ -11,5 +49,26 @@ body {
 #bar {
   -webkit-bos-shadow: 0 4px 6px -6px #222;
   -moz-box-shadow: 0 4px 6px -6px #222;
-  box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0px 4px 8px -4px #222;
+  }
+
+/* <-----Landing page background carousel-----> */
+
+.carousel-inner {
+  height: 93vh;
+  width: 100%;
+  text-align: center;
 }
+
+.carousel-item {
+  transition: transform 5s ease, opacity .35s ease-out
+}
+
+img {
+  height: 100%;
+  vertical-align: top;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+}
+
+

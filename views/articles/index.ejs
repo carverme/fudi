@@ -1,27 +1,30 @@
+<div>
 <h1>Füdizzles</h1>
-
 <a href="/articles/new" class="btn btn-primary">Unleash your Füdi!</a><br />
+</div>
+
+<% articles.forEach(function(article, idx) { %>
 
 <div class="card text-center">
     <div class="card-header">
-      Featured
+      Date Time go here, aligned left of card.
     </div>
     <div class="card-body">
-      <h5 class="card-title">Special title treatment</h5>
+      <p>image carousel goes here</p>
+      <h5 class="card-title">Special title treatement</h5>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="well">
+          <a href="/articles/<%= article.id %>"><h2><%= article.title %></h2><h5>Written by: <%= article.author %></h5></a>
+          <a class="btn btn-warning" href="/articles/<%= article.id %>/edit">Edit This Post</a>
+          <a class="btn btn-danger delete" href="/articles/<%= article.id %>">Delete</a>
+        </div>
+    
+    
     </div>
     <div class="card-footer text-muted">
-      2 days ago
+      Date time ago/ elapsed time, right aligned of card
     </div>
   </div>
 
-
-
-<% articles.forEach(function(article, idx) { %>
-  <div class="well">
-    <a href="/articles/<%= article.id %>"><h2><%= article.title %></h2><h5>Written by: <%= article.author %></h5></a>
-    <a class="btn btn-warning" href="/articles/<%= article.id %>/edit">Edit This Post</a>
-    <a class="btn btn-danger delete" href="/articles/<%= article.id %>">Delete</a>
-  </div>
 <% }); %>
