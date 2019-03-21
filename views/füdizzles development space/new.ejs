@@ -1,21 +1,28 @@
-<h1>New Article</h1>
+<h1>Post</h1>
 
-<form action="/articles" method="POST" role="form">
-
+<form action="/fudizzles" method="POST" role="form">
   <div class="form-group">
     <label for="title" class="hidden">Title</label>
     <input type="text" class="form-control" id="title" placeholder="Title" name="title">
   </div>
-  
   <div class="form-group">
-    <label for="author" class="hidden">Author</label>
-    <input type="text" class="form-control" id="author" placeholder="Author" name="author">
-  </div><br />
-
-  <div class="form-group">
-    <label for="body" class="hidden">Body</label>
-    <textarea type="text" class="form-control" id="body" placeholder="Body" name="body"></textarea>
+      <label for="fileAdd">Add a pic/vid/recipe!</label>
+      <input type="file" class="form-control-file" id="fileAdd">
   </div>
-
+  <div class="form-group">
+      <label for="description">Description</label>
+      <textarea type="text" class="form-control" id="description" placeholder="Tell the world about your experience." name="description"></textarea>
+  </div>
+  <div class="form-group">
+      <label for="location">Add a location!</label>
+      <input type="text" class="form-control" id="location" placeholder="Where'd you find this awesome füd?">
+  </div>  
+  <div class="form-group">
+      <label for="tags">Tag it!</label>
+      <input type="text" class="form-control" id="tags" placeholder="Tags here.">
+  </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
+
+<!-- Include form validation, Bootstrap has this built in, but server side is good too. -->
