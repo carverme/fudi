@@ -47,6 +47,16 @@ app.get('/articles/new', function(req, res) {
   res.render('articles/new');
 });
 
+// New - GET /auths/signup
+app.get('/auths/signup', function(req, res) {
+  res.render('auths/signup');
+});
+
+// New - GET /auths/login
+app.get('/auths/login', function(req, res) {
+  res.render('auths/login');
+})
+
 //GET to /articles/edit - updates the specific article called.
 app.get('/articles/:index/edit', function(req, res) {
   var index = parseInt(req.params.index);

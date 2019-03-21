@@ -1,7 +1,3 @@
-
-
-
-
 $(document).ready(function() {
   $('.edit-form').on('submit', function(e) {
     console.log('working!!')
