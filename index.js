@@ -57,6 +57,16 @@ app.get('/auths/login', function(req, res) {
   res.render('auths/login');
 })
 
+//New - GET /fudis/index
+app.get('/fudis/index', function(req, res) {
+  res.render('fudis/index');
+})
+
+//New - GET /fudis/new
+app.get('/fudis/new', function(req, res) {
+  res.render('fudis/new');
+})
+
 //GET to /articles/edit - updates the specific article called.
 app.get('/articles/:index/edit', function(req, res) {
   var index = parseInt(req.params.index);
