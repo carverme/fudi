@@ -35,6 +35,8 @@ Front to Back
 ###How to use?###
 Click the tutorial in the "What's a Füdi?" section for fun pop out hints!
 
+The füdi app allows you to track your favorite foods.  Check others' out, and see them today!
+
 ##Contribute##
 If you're interested in contribution, please contribute responsibly be following a normal Git process!
 
