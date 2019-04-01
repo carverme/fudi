@@ -36,7 +36,7 @@ Front to Back
 Click the tutorial in the "What's a Füdi?" section for fun pop out hints!
 
 ##Contribute##
-
+If you're interested in contribution, please contribute responsibly be following a normal Git process!
 
 ###Jams###
 https://open.spotify.com/album/5z6uE4yOPBzzAOqI4jXCLl?si=JOl-0uCPRai5akFsu3UOsA
